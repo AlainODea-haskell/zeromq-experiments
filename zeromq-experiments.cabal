@@ -1,0 +1,75 @@
+name:                zeromq-experiments
+version:             0.1.0.0
+synopsis:            ZeroMQ security experiments for Haskell
+description:         A set of experiments and exercises for learning
+                     ZeroMQ security in Haskell based on Pieter Hintjens'
+                     blog post "Using ZeroMQ Security (part 2)"
+                     http://hintjens.com/blog:49
+homepage:            https://github.com/AlainODea/zeromq-experiments#readme
+license:             MIT
+license-file:        LICENSE
+author:              Alain O''Dea
+maintainer:          alain.odea@gmail.com
+copyright:           2017, Alain O''Dea
+category:            System, FFI
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+executable grasslands
+  hs-source-dirs:      app
+  main-is:             grasslands.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N 
+  build-depends:       base
+                     , zeromq4-haskell
+                     , bytestring
+  default-language:    Haskell2010
+
+executable strawhouse
+  hs-source-dirs:      app
+  main-is:             strawhouse.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N 
+  build-depends:       base
+                     , zeromq4-haskell
+                     , bytestring
+  default-language:    Haskell2010
+
+executable woodhouse
+  hs-source-dirs:      app
+  main-is:             woodhouse.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N 
+  build-depends:       base
+                     , zeromq4-haskell
+                     , bytestring
+  default-language:    Haskell2010
+
+executable stonehouse
+  hs-source-dirs:      app
+  main-is:             stonehouse.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N 
+  build-depends:       base
+                     , zeromq4-haskell
+                     , bytestring
+  default-language:    Haskell2010
+
+executable ironhouse
+  hs-source-dirs:      app
+  main-is:             ironhouse.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N 
+  build-depends:       base
+                     , zeromq4-haskell
+                     , bytestring
+  default-language:    Haskell2010
+
+executable ironhouse2
+  hs-source-dirs:      app
+  main-is:             ironhouse2.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N 
+  build-depends:       base
+                     , zeromq4-haskell
+                     , bytestring
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/AlainODea-haskell/zeromq-experiments
